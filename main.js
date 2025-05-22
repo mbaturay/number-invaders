@@ -51,11 +51,11 @@ function render() {
 
 // Keyboard controls for cycling selected number
 window.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowUp') {
+    if (e.key === 'ArrowRight') {
         selectedNumber = (selectedNumber + 1) % 10;
         render();
         e.preventDefault();
-    } else if (e.key === 'ArrowDown') {
+    } else if (e.key === 'ArrowLeft') {
         selectedNumber = (selectedNumber + 9) % 10;
         render();
         e.preventDefault();
