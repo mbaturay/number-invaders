@@ -5,7 +5,7 @@ let level = 1;
 let score = 0;
 let misses = 0;
 let selectedNumber = 0;
-const lineLength = 20; // Board is 20 characters long
+const lineLength = 24; // Board is now 24 characters long
 let gameLine = []; // Start with an empty board
 let spawnInterval = null;
 
