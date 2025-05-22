@@ -1,5 +1,6 @@
-/* Import Jua font from Google Fonts */
+/* Import Jua font and additional fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sixtyfour&display=swap');
 
 :root {
     --bg-color: #0f172a;
@@ -9,6 +10,8 @@
     --text-color: #f8fafc;
     --border-radius: 12px;
     --main-font: 'Jua', sans-serif;
+    --board-font: 'Sixtyfour', cursive;
+    --mono-font: 'JetBrains Mono', monospace;
 }
 
 * {
@@ -52,7 +55,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    font-family: var(--main-font);
+    font-family: var(--mono-font);
     padding: 1rem 2rem;
     background-color: rgba(15, 23, 42, 0.6);
     border-radius: var(--border-radius);
@@ -61,6 +64,7 @@ h1 {
 #score, #level, #misses {
     font-size: 1.1rem;
     font-weight: bold;
+    font-variant-numeric: tabular-nums;
 }
 
 #score {
@@ -83,11 +87,11 @@ h1 {
     margin: 2rem auto;
     background: rgba(15, 23, 42, 0.9);
     border-radius: var(--border-radius);
-    font-size: 2.5rem;
-    letter-spacing: 15px;
+    font-size: 2.2rem;
+    letter-spacing: 12px;
     padding: 0 20px;
     width: 100%;
-    font-family: var(--main-font);
+    font-family: var(--board-font);
     overflow: hidden;
     position: relative;
 }
