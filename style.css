@@ -1,0 +1,100 @@
+/* Import modern serif font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+body {
+    background: #181c25;
+    color: #39ff14;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #232946;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    text-align: center;
+}
+h1 {
+    margin-bottom: 16px;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    color: #39ff14;
+    font-family: 'Noto Serif', serif;
+}
+#info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 1.2em;
+    background: transparent;
+    color: #39ff14;
+    border: none;
+    border-radius: 0;
+    padding: 8px 24px;
+    font-family: 'Noto Serif', serif;
+    box-shadow: none;
+    letter-spacing: 2px;
+}
+#game-board {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    margin: 24px auto 22px auto;
+    background: #000;
+    border: 2px solid #39ff14;
+    border-radius: 8px;
+    font-size: 2.8em;
+    letter-spacing: 24px;
+    min-height: 80px;
+    width: 1100px;
+    color: #39ff14;
+    font-family: 'Noto Serif', serif;
+    box-shadow: 0 0 16px #39ff14 inset;
+    overflow-x: auto;
+}
+#selector {
+    margin-top: 10px;
+    background: transparent;
+    color: #39ff14;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 1.2em;
+    font-family: 'Noto Serif', serif;
+    box-shadow: none;
+    letter-spacing: 2px;
+}
+#selected-number {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #111;
+    background: #39ff14;
+    border-radius: 3px;
+    padding: 2px 10px;
+    margin-left: 8px;
+    font-family: 'Noto Serif', serif;
+}
+.level-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: 0 auto;
+    font-size: 2.5em;
+    color: #39ff14;
+    background: rgba(0,0,0,0.92);
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    width: 420px;
+    padding: 32px 0;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    box-shadow: 0 0 24px #39ff14;
+    z-index: 100;
+    display: none;
+}
