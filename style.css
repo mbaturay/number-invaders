@@ -1,6 +1,6 @@
 /* Import Jua font and additional fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Kalam:wght@700&display=swap');
 
 :root {
     --bg-color: #0f172a;
@@ -10,7 +10,7 @@
     --text-color: #f8fafc;
     --border-radius: 12px;
     --main-font: 'Jua', sans-serif;
-    --board-font: 'Sixtyfour', cursive;
+    --board-font: 'Kalam', cursive;
     --mono-font: 'JetBrains Mono', monospace;
 }
 
