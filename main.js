@@ -18,18 +18,33 @@ const selectorEl = document.getElementById('selected-number');
 
 // Render function to update the game board and selector
 function render() {
-    // Render only the current numbers (no placeholders)
+    // Render game board
     boardEl.innerHTML = '';
     for (let i = 0; i < gameLine.length; i++) {
         const cell = document.createElement('span');
         cell.className = 'cell';
         cell.textContent = gameLine[i];
+        // Add animation delay based on position
+        cell.style.animationDelay = `${i * 0.05}s`;
+        
+        // If this is a newly added number, give it an entrance animation
+        if (i === gameLine.length - 1) {
+            cell.style.transform = 'scale(1.2)';
+            cell.style.opacity = '0.7';
+            setTimeout(() => {
+                cell.style.transform = 'scale(1)';
+                cell.style.opacity = '1';
+            }, 50);
+        }
+        
         boardEl.appendChild(cell);
     }
+    
     // Render info
     scoreEl.textContent = `Score: ${score}`;
     levelEl.textContent = `Level: ${level}`;
     missesEl.textContent = `Misses: ${misses}`;
+    
     // Render selector
     selectorEl.textContent = selectedNumber;
 }
